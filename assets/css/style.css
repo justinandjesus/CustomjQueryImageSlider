@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+* {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-family: "Raleway", sans-serif;
+  background: #212121;
+  font-size: 25px;
+}
+
+header {
+  background: #212121;
+  color: #fff;
+  min-height: 100px;
+  max-width: 1920px;
+  margin: 0 auto !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px !important;
+}
+
+#imageSlider {
+  position: relative;
+  height: 70vh;
+  width: 100vw;
+  box-shadow: 0px 0px 15px #717171;
+  max-width: 1920px;
+  margin: 0px auto !important;
+}
+#imageSlider #next, #imageSlider #prev {
+  color: #fff;
+  position: absolute;
+  z-index: 20;
+  top: 80%;
+  opacity: 0.7;
+  transform: translateY(-50%);
+  font-size: 70px;
+  background: none;
+  cursor: pointer;
+}
+@media(max-width:768px) {
+  #imageSlider #next, #imageSlider #prev {
+    font-size: 25px !important;
+  }
+}
+#imageSlider #prev {
+  left: 42%;
+}
+#imageSlider #next {
+  right: 42%;
+}
+#imageSlider .slider .item {
+  background: grey;
+  height: 70vh;
+  width: 100vw;
+  max-width: 1920px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+#imageSlider .slider .item.active {
+  z-index: 10;
+}
+#imageSlider .slider .item:nth-child(1) {
+  background: url(../img/slider1.jpg) no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#imageSlider .slider .item:nth-child(2) {
+  background: url(../img/slider2.jpg) no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#imageSlider .slider .item:nth-child(3) {
+  background: url(../img/slider3.jpg) no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#imageSlider .slider .item:nth-child(4) {
+  background: url(../img/slider4.jpg) no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+footer {
+  height: 80px;
+  display: flex;
+  color: #fff;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer h3 {
+  margin-right: 20px !important;
+}
+
+/*# sourceMappingURL=style.css.map */
